@@ -10,8 +10,8 @@ from pprint import pprint
 # all entries which contain the word in it
 
 completestring = "" #Define Complete string
-fileswords = io.open(r"C:\Users\osaze\AppData\Local\Programs\Python\Python36-32\Here lies a dead man\Second Batch Test FIle.txt", mode="r", encoding="utf-8")
-fileswrite = io.open("PLEASEWORK.txt", mode="w", encoding="utf-8")
+fileswords = io.open(r"targetfilepath.txt", mode="r", encoding="utf-8")
+fileswrite = io.open("output.txt", mode="w", encoding="utf-8")
 for line in fileswords:
     time.sleep(.400) #Don't wanna overload the API haha
     url = 'https://jisho.org/api/v1/search/words?keyword='+line
